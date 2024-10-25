@@ -6,7 +6,7 @@ Description of the dataset
 
 Our dataset contains all the international men’s football matches played from 1872-2020. The attributes of the dataset include the date of the match, the scores, the teams that played, the location it was played in etc. The reason we chose this dataset is because it gives us a lot of information about the development of football through the ages. From this dataset, we can extract a lot of useful information such as figuring out who the best team is, which team has dominated a certain era of football, the best home/away team and the best offensive/defensive team in a specified range of time. This dataset that we discovered had a high usability score and had no null values. Our dataset contains about 40,000 results which meets the minimum requirement of 10,000.
 
-ER diagram (final version from the previous checkpoint copied here)
+ER diagram 
 
 
 
@@ -17,19 +17,19 @@ ER diagram (final version from the previous checkpoint copied here)
 
 
 
-Relational model (final version from the previous checkpoint copied here)
+Relational model 
 
-competesIn( teamID: int, tournamentID: int)
+- competesIn( teamID: int, tournamentID: int)
 
-playedIn(City: String, Country: String, MatchID: int)
+- playedIn(City: String, Country: String, MatchID: int)
 
-played(pid: integer, matchID: integer, HomeID: integer, AwayID: int)
+- played(pid: integer, matchID: integer, HomeID: integer, AwayID: int)
 
-Tournament(tournamentID: Real, tournamentName: String)
+- Tournament(tournamentID: Real, tournamentName: String)
 
-Team(TeamID: Real, TeamName: String, Wins: Integer, goalScored:Integer)
+- Team(TeamID: Real, TeamName: String, Wins: Integer, goalScored:Integer)
 
-Match(MatchID: Real, Home: String, Away: String, MatchDate: DATE, AwayScore: Integer, HomeScore: Integer) 
+- Match(MatchID: Real, Home: String, Away: String, MatchDate: DATE, AwayScore: Integer, HomeScore: Integer) 
 
 
 Implementation: description of the prototype
