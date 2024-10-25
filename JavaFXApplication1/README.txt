@@ -1,0 +1,1 @@
+*THIS APPLICATION WAS WRITTEN IN Java JDK 1.8 on NetBeans IDE, with JavaFX, sqlite-jdbc and fontawesome libraries
